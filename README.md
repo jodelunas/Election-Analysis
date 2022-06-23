@@ -1,25 +1,25 @@
-# Election-Analysis
+# Election-Audit
 
-## Project Overview
-A Colorado Board of Elections employee has given you the following tasks to complete the election audit of a recent local congressional election.
+## Overview of Election Audit
+The purpose of this audit was to add the following additional data to complete the audit.
 
-1. Calculate the total number of votes cast.
-2. Get a complete list of candidates who recieved votes.
-3. Calculate the total number of votes each candidate won.
-4. Calculate the percentage of votes each candidate won.
-5. Determine the winner of the electon based on popular vote.
+1. The voter turnout for each county.
+2. The precentage of votes from each county.
+3. The county with the largest turnout.
 
 ## Resources
 - Data Source: election_results.csv
 - Software: Python 3.6.1, Visual Studio Code, 1.38.1
 
-## Summary
-The analysis of the election show that:
+## Election-Audit Results
+The audit of the election show that:
 - There were 369,711 votes cast in the election.
-- The candidates were:
-  - Charles Casper Stockham
-  - Diana DeGette
-  - Raymon Anthony Doane
+- The county results were:
+  - Jefferson County had 10.5% of the vote and 38,855 number of votes.
+  - Denver County had 82.8% of the vote and 306,055 number of votes. 
+  - Arapahoe County had 6.7% of the vote and 24,804 number of votes.
+-The county with the largest voter turnout was:
+  -Denver County with 82.8% of the vote and 306,055 number of votes.
 - The candidate results were:
   - Charles Casper Stockham received 23.0% of the vote and 85,213 number of votes.
   - Diana DeGette received 73.8% of the vote and 272,892 number of votes.
@@ -27,7 +27,5 @@ The analysis of the election show that:
 - The winner of the election was:
   - Diane Degette who recieved 73.8% of the vote and 272,892 number of votes.
 
-## Challenge Overview
-To complet an election audit based on the CSV file received. Learn how to pull the information needed from the file.
-## Challenge Summary
-The first step was to improt the file to VS code and create variables to load, read, and save the files. The next step was to create a list and dictionary to hold the information needed. I then need to create a for loop to pull information from the file and put it in the prespective dictionary and list. I had to create conditional formats to filter information. Codes were written to get the information needed in the Project overview from the dictionary and lists. I then needed to write the results to a text file.
+## Election-Audit Summary
+The script as written, can be used as written for other districts or states within the parameter used here. Since most elections have more than one seat being elected, some simple modifications can be made to accomidate this. For every seat I would need to create a list and dictionary to hold their names and votes. I would need to extract name from the corisponding row in the data and track their votes. Use if statements to retrieve the candidates and calculate the winner. I would need  a for loop to determine the percentage of votes for the candidate. Then just print the results.
